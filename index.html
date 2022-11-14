@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+
+  <title>Week2 - 今晚，我想來點點簽</title>
+  <link href="./lib/css" rel="stylesheet">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- BEGIN: Vendor CSS-->
+  <link rel="stylesheet" type="text/css" href="./lib/vendors.min.css">
+  <link rel="stylesheet" type="text/css" href="./lib/switchery.min.css">
+  <link rel="stylesheet" type="text/css" href="./lib/switch.min.css">
+  <link rel="stylesheet" type="text/css" href="./lib/palette-switch.min.css">
+  <link rel="stylesheet" type="text/css" href="./lib/chartist.css">
+  <link rel="stylesheet" type="text/css" href="./lib/chartist-plugin-tooltip.css">
+  <link rel="stylesheet" type="text/css" href="./css/feather_style.min.css">
+  <!-- END: Vendor CSS-->
+
+  <!-- BEGIN: Theme CSS-->
+  <link rel="stylesheet" type="text/css" href="./lib/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./lib/bootstrap-extended.min.css">
+  <link rel="stylesheet" type="text/css" href="./lib/colors.min.css">
+  <link rel="stylesheet" type="text/css" href="./lib/components.min.css">
+  <!-- END: Theme CSS-->
+
+  <!-- BEGIN: Page CSS-->
+  <link rel="stylesheet" type="text/css" href="./lib/vertical-menu.min.css">
+  <link rel="stylesheet" type="text/css" href="./lib/palette-gradient.min.css">
+  <link rel="stylesheet" type="text/css" href="./lib/palette-gradient.min.css">
+  <link rel="stylesheet" type="text/css" href="./lib/chat-application.css">
+  <link rel="stylesheet" type="text/css" href="./lib/dashboard-analytics.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/wizard.min.css">
+  <!-- END: Page CSS-->
+
+  <!-- BEGIN: Custom CSS-->
+  <link rel="stylesheet" type="text/css" href="./lib/style.css">
+  <!-- END: Custom CSS-->
+
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body class="vertical-layout vertical-menu 2-columns fixed-navbar  menu-expanded pace-done" data-open="click"
+  data-menu="vertical-menu" data-color="bg-gradient-x-purple-blue" data-col="2-columns">
+  <div class="pace  pace-inactive">
+    <div class="pace-progress" data-progress-text="100%" data-progress="99"
+      style="transform: translate3d(100%, 0px, 0px);">
+      <div class="pace-progress-inner"></div>
+    </div>
+    <div class="pace-activity"></div>
+  </div>
+
+  <nav
+    class="header-navbar navbar-expand-md navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-semi-light">
+    <div class="navbar-wrapper">
+      <div class="navbar-container content">
+        <div class="collapse navbar-collapse show" id="navbar-mobile">
+          <ul class="nav navbar-nav mr-auto float-left">
+            <li class="nav-item mobile-menu d-md-none mr-auto">
+              <a class="nav-link nav-menu-main menu-toggle hidden-xs is-active" href="#">
+                <i class="ft-menu font-large-1"></i>
+              </a>
+            </li>
+            <li class="nav-item d-none d-md-block">
+              <a class="nav-link nav-menu-main menu-toggle hidden-xs is-active" href="#">
+                <i class="ft-menu"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav float-right">
+            <li class="dropdown dropdown-user nav-item">
+              <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                <span class="avatar avatar-online">
+                  <img src="https://2022.thef2e.com/_nuxt/img/frontend.1c75b89.png" alt="avatar">
+                </span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <div class="arrow_box_right">
+                  <a class="dropdown-item" href="#">
+                    <span class="avatar avatar-online">
+                      <img src="https://2022.thef2e.com/_nuxt/img/frontend.1c75b89.png" alt="avatar">
+                      <span class="user-name text-bold-700 ml-1"> Username </span>
+                    </span>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">
+                    <i class="ft-power"></i> Logout
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BEGIN: Main Menu-->
+  <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow " data-scroll-to-active="true"
+    data-img="./lib/04.jpg">
+    <div class="navbar-header">
+      <ul class="nav navbar-nav flex-row">
+        <li class="nav-item mr-auto">
+          <a class="navbar-brand" href="/">
+            <img class="brand-logo" alt="來點點簽 logo" src="./images/logo.png">
+            <h3 class="brand-text"> 來點點簽 </h3>
+          </a>
+        </li>
+        <li class="nav-item d-md-none"><a class="nav-link close-navbar"><i class="ft-x"></i></a></li>
+      </ul>
+    </div>
+    <div class="navigation-background"></div>
+    <div class="main-menu-content ps ps--active-y">
+      <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+        <li class="nav-item active">
+          <a href="#">
+            <i class="ft-clipboard"></i>
+            <span class="menu-title">來點點簽</span>
+          </a>
+        </li>
+      </ul>
+      <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+        <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+      </div>
+      <div class="ps__rail-y" style="top: 0px; height: 812px; right: 0px;">
+        <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 629px;"></div>
+      </div>
+    </div>
+  </div>
+  <!-- END: Main Menu-->
+
+  <!-- BEGIN: Content-->
+  <div class="app-content content">
+    <div class="content-wrapper">
+      <div class="content-wrapper-before"></div>
+      <div class="content-header row">
+      </div>
+      <div class="content-body">
+        <div class="row m-0">
+          <div class="col-12 p-0">
+            <div class="card">
+              <div class="card-body">
+                <!-- Tab-Controller -->
+                <ul class="nav nav-tabs mb-2">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="my-file" data-toggle="tab" aria-controls="my-file-content"
+                      href="#my-file-content" aria-expanded="true">
+                      <i class="ft-file-text"></i>
+                      <span>我的文件</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="fav-file" data-toggle="tab" aria-controls="fav-file-content"
+                      href="#fav-file-content" aria-expanded="false">
+                      <i class="ft-folder"></i>
+                      <span>已封存的文件</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="trash" data-toggle="tab" aria-controls="trash-content" href="#trash-content"
+                      aria-expanded="false">
+                      <i class="ft-trash-2"></i>
+                      <span>垃圾桶</span>
+                    </a>
+                  </li>
+                </ul>
+                <!-- Tab-Content -->
+                <div class="tab-content px-1 pt-1">
+                  <div role="tabpanel" class="tab-pane active" id="my-file-content" aria-expanded="true"
+                    aria-labelledby="my-file">
+                    <div class="card">
+                      <div class="card header">
+                        <div class="row m-0">
+                          <div class="col-6 p-0 d-flex align-items-center">
+                            <h3 class="m-0 blue"> 我的文件 </h3>
+                          </div>
+                          <div class="col-6 p-0">
+                            <button type="button" class="btn btn-outline-info btn-min-width align-middle font-medium-2"
+                              style="float: right; width: 100px; display: flex; justify-content: center; align-items: center;"
+                              data-toggle="modal" data-keyboard="false" data-target="#create-modal">
+                              <i class="ft-plus font-medium-3" style="margin-right: 6px;"></i>
+                              <span> 新增 </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body p-0">
+                        <ul class="m-0 p-0" id="pdf-list">
+                          <li
+                            class="row m-0 px-2 py-1 mb-1 d-flex justify-content-center align-items-center custom-dark-shadow-sm custom-rounded-20">
+                            <i class="col-md-1 col-sm-2 col-2 p-0 ft-paperclip text-center font-medium-3"></i>
+                            <span class="col-md-3 col-sm-10 col-10 p-0 font-medium-2">2022-11-07 12:34:56</span>
+                            <span class="col-md-3 col-sm-10 col-12 p-0 font-medium-2">合約finalfinalfinal</span>
+                            <div class="col-md-5 col-sm-12 p-0 d-flex justify-content-end" style="gap: 10px;">
+                              <a href="#" class="btn btn-outline-primary"><i class="ft-download font-medium-3"></i></a>
+                              <a href="#" class="btn btn-outline-success"><i class="ft-bookmark font-medium-3"></i></a>
+                              <a href="#" class="btn btn-outline-danger"><i class="ft-trash font-medium-3"></i></a>
+                            </div>
+                          </li>
+                          <li
+                            class="row m-0 px-2 py-1 mb-1 d-flex justify-content-center align-items-center custom-dark-shadow-sm custom-rounded-20">
+                            <i class="col-md-1 col-sm-2 col-2 p-0 ft-paperclip text-center font-medium-3"></i>
+                            <span class="col-md-3 col-sm-10 col-10 p-0 font-medium-2">2022-11-07 12:34:56</span>
+                            <span class="col-md-3 col-sm-10 col-12 p-0 font-medium-2">合約finalfinalfinal</span>
+                            <div class="col-md-5 col-sm-12 p-0 d-flex justify-content-end" style="gap: 10px;">
+                              <a href="#" class="btn btn-outline-primary"><i class="ft-download font-medium-3"></i></a>
+                              <a href="#" class="btn btn-outline-success"><i class="ft-bookmark font-medium-3"></i></a>
+                              <a href="#" class="btn btn-outline-danger"><i class="ft-trash font-medium-3"></i></a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="fav-file-content" aria-labelledby="fav-file">
+                    <div class="card">
+                      <div class="card header">
+                        <div class="row m-0">
+                          <div class="col-12 p-0 d-flex align-items-center">
+                            <h3 class="m-0 blue"> 已封存的文件 </h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body p-0">
+                        <ul class="m-0 p-0" id="favorite-list">
+                          <li
+                            class="row m-0 px-2 py-1 mb-1 d-flex justify-content-center align-items-center custom-dark-shadow-sm custom-rounded-20">
+                            <i class="col-md-1 col-sm-2 col-2 p-0 ft-paperclip text-center font-medium-3"></i>
+                            <span class="col-md-3 col-sm-10 col-10 p-0 font-medium-2">2022-11-07 12:34:56</span>
+                            <span class="col-md-3 col-sm-10 col-12 p-0 font-medium-2">合約finalfinalfinal</span>
+                            <div class="col-md-5 col-sm-12 p-0 d-flex justify-content-end" style="gap: 10px;">
+                              <a href="#" class="btn btn-warning"><i class="ft-heart font-medium-3"></i></a>
+                              <a href="#" class="btn btn-outline-danger"><i class="ft-trash font-medium-3"></i></a>
+                            </div>
+                          </li>
+                          <li
+                            class="row m-0 px-2 py-1 mb-1 d-flex justify-content-center align-items-center custom-dark-shadow-sm custom-rounded-20">
+                            <i class="col-md-1 col-sm-2 col-2 p-0 ft-paperclip text-center font-medium-3"></i>
+                            <span class="col-md-3 col-sm-10 col-10 p-0 font-medium-2">2022-11-07 12:34:56</span>
+                            <span class="col-md-3 col-sm-10 col-12 p-0 font-medium-2">合約finalfinalfinal</span>
+                            <div class="col-md-5 col-sm-12 p-0 d-flex justify-content-end" style="gap: 10px;">
+                              <a href="#" class="btn btn-warning"><i class="ft-heart font-medium-3"></i></a>
+                              <a href="#" class="btn btn-outline-danger"><i class="ft-trash font-medium-3"></i></a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="trash-content" aria-labelledby="trash">
+                    <div class="card">
+                      <div class="card header">
+                        <div class="row m-0">
+                          <div class="col-12 p-0 d-flex align-items-center">
+                            <h3 class="m-0 blue"> 垃圾桶 </h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body p-0">
+                        <ul class="m-0 p-0" id="trash-list">
+                          <li
+                            class="row m-0 px-2 py-1 mb-1 d-flex justify-content-center align-items-center custom-dark-shadow-sm custom-rounded-20">
+                            <i class="col-md-1 col-sm-2 col-2 p-0 ft-paperclip text-center font-medium-3"></i>
+                            <span class="col-md-3 col-sm-10 col-10 p-0 font-medium-2">2022-11-07 12:34:56</span>
+                            <span class="col-md-3 col-sm-10 col-12 p-0 font-medium-2">合約finalfinalfinal</span>
+                            <div class="col-md-5 col-sm-12 p-0 d-flex justify-content-end" style="gap: 10px;">
+                              <a href="#" class="btn btn-outline-success"><i class="ft-rotate-cw font-medium-3"></i></a>
+                              <a href="#" class="btn btn-outline-danger"><i class="ft-trash font-medium-3"></i></a>
+                            </div>
+                          </li>
+                          <li
+                            class="row m-0 px-2 py-1 mb-1 d-flex justify-content-center align-items-center custom-dark-shadow-sm custom-rounded-20">
+                            <i class="col-md-1 col-sm-2 col-2 p-0 ft-paperclip text-center font-medium-3"></i>
+                            <span class="col-md-3 col-sm-10 col-10 p-0 font-medium-2">2022-11-07 12:34:56</span>
+                            <span class="col-md-3 col-sm-10 col-12 p-0 font-medium-2">合約finalfinalfinal</span>
+                            <div class="col-md-5 col-sm-12 p-0 d-flex justify-content-end" style="gap: 10px;">
+                              <a href="#" class="btn btn-outline-success"><i class="ft-rotate-cw font-medium-3"></i></a>
+                              <a href="#" class="btn btn-outline-danger"><i class="ft-trash font-medium-3"></i></a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END: Content-->
+
+  <!-- BEGIN: Modal  -->
+  <div class="modal fade text-left show" id="create-modal" tabindex="-1" role="dialog"
+    aria-labelledby="basicModalLabel3" aria-modal="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="basicModalLabel3">新增</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row m-0">
+            <div class="col-12 p-0">
+              <div class="card app-content">
+                <div class="card-content collapse show">
+                  <div class="card-body">
+                    <form action="#" class="icons-tab-steps wizard clearfix" role="application" id="steps-uid-0">
+                      <div class="steps clearfix">
+                        <ul role="tablist">
+                          <li role="tab" class="step-tab first current" aria-disabled="false" aria-selected="true">
+                            <a href="javascript:void(0)" class="cursor-default">
+                              <span class="step"><i class="step-icon ft-upload"></i></span>
+                              <span>上傳文件</span>
+                            </a>
+                          </li>
+                          <li role="tab" class="step-tab second " aria-disabled="true">
+                            <a href="javascript:void(0)" class="cursor-default">
+                              <span class="step"><i class="step-icon ft-edit-3"></i></span>
+                              <span>簽名</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="content clearfix">
+                        <!-- Step 1 -->
+                        <h6 id="steps-uid-0-h-0" tabindex="-1" class="title current">
+                          <i class="step-icon ft-home"></i>
+                          Step 1
+                        </h6>
+                        <fieldset id="steps-uid-0-p-0" role="tabpanel" aria-labelledby="steps-uid-0-h-0"
+                          class="body p-0 current" aria-hidden="false">
+                          <div class="row m-0">
+                            <div class="col-12 p-0">
+                              <div class="upload-files-container">
+                                <div class="drag-file-area">
+                                  <span class="material-icons-outlined upload-icon font-large-1"> 上傳文件 </span>
+                                  <h5 class="dynamic-message"> 或者將檔案拖曳到這裡 </h5>
+                                  <label class="label">
+                                    <span class="browse-files">
+                                      <input type="file" class="default-file-input" accept=".pdf"
+                                        id="upload-single-pg" />
+                                      <span>或是</span>
+                                      <span class="browse-files-text"> 瀏覽 </span>
+                                      <span> 本地文件 </span>
+                                    </span>
+                                  </label>
+                                </div>
+                                <span class="cannot-upload-message">
+                                  <span class="material-icons-outlined"> 無文件 </span>
+                                  <span class="material-icons-outlined cancel-alert-button"> 取消 </span>
+                                </span>
+                                <div class="file-block">
+                                  <div class="file-info">
+                                    <span class="material-icons-outlined file-icon"> 文件名稱 </span>
+                                    <span class="file-name"></span> | <span class="file-size"></span>
+                                  </div>
+                                  <div class="progress-bar"></div>
+                                  <span class="material-icons remove-file-icon"> 刪除 </span>
+                                </div>
+                                <button type="button" class="upload-button"> 上傳 </button>
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+
+                        <!-- Step 2 -->
+                        <h6 id="steps-uid-0-h-1" tabindex="-1" class="title">
+                          <i class="step-icon ft-file-text"></i>
+                          Step 2
+                        </h6>
+                        <fieldset id="steps-uid-0-p-1" role="tabpanel" aria-labelledby="steps-uid-0-h-1"
+                          class="body p-0  custom-hide" aria-hidden="true">
+
+                          <div class="row m-0">
+                            <div class="col-12 p-0">
+                              <!-- Tab-Controller -->
+                              <ul class="nav nav-tabs mb-2">
+                                <li class="nav-item">
+                                  <a class="nav-link active" id="add-signature" data-toggle="tab"
+                                    aria-controls="add-signature-content" href="#add-signature-content"
+                                    aria-expanded="true">
+                                    <i class="ft-edit"></i>
+                                    <span>簽名</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" id="manage-signature" data-toggle="tab"
+                                    aria-controls="manage-signature-content" href="#manage-signature-content"
+                                    aria-expanded="false">
+                                    <i class="ft-folder"></i>
+                                    <span>管理</span>
+                                  </a>
+                                </li>
+                              </ul>
+                              <div class="tab-content px-1 pt-1">
+                                <!-- Choose Sign -->
+                                <div class="tab-pane active" id="add-signature-content" aria-labelledby="add-signature">
+                                  <div class="row m-0 mb-2" style="width: calc(100% - 10px); margin: 0 5px;">
+                                    <ul class="m-0 p-1 d-flex overflow-horizontal" style="gap: 10px;"
+                                      id="signature-list-selector">
+                                    </ul>
+                                  </div>
+                                  <div class="row m-0">
+                                    <div class="col-12 p-0">
+                                      <canvas id="pdf-canvas-viewer"
+                                        class="d-block border border-primary custom-rounded-20"></canvas>
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <!-- Manage Sign -->
+                                <div class="tab-pane" id="manage-signature-content" aria-labelledby="manage-signature">
+                                  <div class="row m-0 mb-2" style="width: calc(100% - 10px); margin: 0 5px;">
+                                    <ul class="m-0 p-1 d-flex overflow-horizontal" style="gap: 10px;"
+                                      id="signature-list-viewer">
+                                    </ul>
+                                  </div>
+                                  <div class="row m-0 mb-1">
+                                    <div class="col-12 p-0 d-flex justify-content-center" style="gap: 10px;">
+                                      <a href="#"
+                                        class="btn p-0 bg-transparent d-flex justify-content-center align-items-center rounded-circle custom-colour-palette active"
+                                        onclick="canvasChangeColor(this)" data-toggle="colour-palette"
+                                        data-color="black"><span class="black"></span>
+                                      </a>
+                                      <a href="#"
+                                        class="btn p-0 bg-transparent d-flex justify-content-center align-items-center rounded-circle custom-colour-palette"
+                                        onclick="canvasChangeColor(this)" data-toggle="colour-palette"
+                                        data-color="red"><span class="red"></span>
+                                      </a>
+                                      <a href="#"
+                                        class="btn p-0 bg-transparent d-flex justify-content-center align-items-center rounded-circle custom-colour-palette"
+                                        onclick="canvasChangeColor(this)" data-toggle="colour-palette"
+                                        data-color="green"><span class="green"></span>
+                                      </a>
+                                      <a href="#"
+                                        class="btn p-0 bg-transparent d-flex justify-content-center align-items-center rounded-circle custom-colour-palette"
+                                        onclick="canvasChangeColor(this)" data-toggle="colour-palette"
+                                        data-color="blue"><span class="blue"></span>
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div class="row m-0">
+                                    <div class="col-12 p-0 mb-1">
+                                      <canvas id="canvas-signature"
+                                        class="d-block border border-primary custom-rounded-20" width="320"
+                                        height="320px"></canvas>
+                                    </div>
+                                    <div class="col-12 p-0 d-flex justify-content-end align-items-center"
+                                      style="gap: 10px">
+                                      <button class="btn btn-secondary" id="clear-signature">清除</button>
+                                      <button class="btn btn-primary" id="save-signature">新增</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="actions clearfix">
+                        <ul role="menu" aria-label="Pagination">
+                          <li class="custom-hide prev">
+                            <a href="javascript:void(0)" role="menuitem" onclick="prevTab()">上一步</a>
+                          </li>
+                          <li class="custom-hide next">
+                            <a href="javascript:void(0)" role="menuitem" onclick="nextTab()">下一步</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="modal-save-btn" type="button" class="close"
+            data-dismiss="modal" aria-label="Close">
+            <span>確定</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END: Modal -->
+
+  <!-- BEGIN: Footer-->
+  <footer class="footer footer-static footer-light navbar-border navbar-shadow">
+    <div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
+      <span class="float-md-left d-block d-md-inline-block">2022 &copy; Copyright
+        <a class="text-bold-800 grey darken-2" href="#">Eugene Yiew</a>
+      </span>
+    </div>
+  </footer>
+  <!-- END: Footer-->
+
+  <!-- BEGIN: Vendor JS-->
+  <script src="./lib/vendors.min.js" type="text/javascript"></script>
+  <script src="./lib/switchery.min.js" type="text/javascript"></script>
+  <script src="./lib/switch.min.js" type="text/javascript"></script>
+  <!-- BEGIN Vendor JS-->
+
+  <!-- BEGIN: Theme JS-->
+  <script src="./lib/app-menu.min.js" type="text/javascript"></script>
+  <script src="./lib/app.min.js" type="text/javascript"></script>
+  <script src="./lib/customizer.min.js" type="text/javascript"></script>
+  <script src="./lib/jquery.sharrre.js" type="text/javascript"></script>
+  <!-- END: Theme JS-->
+
+  <script src="https://unpkg.com/fabric@latest/dist/fabric.js"></script>
+  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+
+  <!-- Custom Script Canvas -->
+  <script src="./javascript/canvas.js"></script>
+  <script src="./javascript/pdf.js"></script>
+
+  <script>
+    const modalStepPagination = document.querySelectorAll("[aria-label='Pagination']")[0];
+    const saveBtn = document.querySelectorAll("#modal-save-btn")[0];
+
+    saveBtn.classList.add('custom-hide');
+
+    function prevTab() {
+      let prevStep = document.querySelectorAll(".step-tab.first")[0];
+      let currentStep = document.querySelectorAll(".step-tab.second")[0];
+      let prevfieldset = document.querySelectorAll("#steps-uid-0-p-0")[0];
+      let currentfieldset = document.querySelectorAll("#steps-uid-0-p-1")[0];
+
+      modalStepPagination.querySelector('.prev').classList.add('custom-hide');
+      modalStepPagination.querySelector('.next').classList.remove('custom-hide');
+
+      prevStep.classList.add('current');
+      prevStep.classList.remove('done');
+
+      currentStep.classList.remove('current');
+      currentStep.classList.add('done');
+
+      prevfieldset.classList.remove('custom-hide');
+      prevfieldset.classList.add('current');
+
+      currentfieldset.classList.add('custom-hide');
+      currentfieldset.classList.remove('current');
+
+      saveBtn.classList.add('custom-hide');
+    }
+
+    function nextTab() {
+      let currentStep = document.querySelectorAll(".step-tab.first")[0];
+      let nextStep = document.querySelectorAll(".step-tab.second")[0];
+      let currentfieldset = document.querySelectorAll("#steps-uid-0-p-0")[0];
+      let nextfieldset = document.querySelectorAll("#steps-uid-0-p-1")[0];
+
+      modalStepPagination.querySelector('.prev').classList.remove('custom-hide');
+      modalStepPagination.querySelector('.next').classList.add('custom-hide');
+
+      currentStep.classList.add('done');
+      currentStep.classList.remove('current');
+
+      nextStep.classList.add('current');
+      nextStep.classList.remove('done');
+
+      currentfieldset.classList.remove('current');
+      currentfieldset.classList.add('custom-hide')
+
+      nextfieldset.classList.remove('custom-hide');
+      nextfieldset.classList.add('current');
+
+      saveBtn.classList.remove('custom-hide');
+    }
+  </script>
+
+  <!-- Upload Modal -->
+  <script>
+    let isAdvancedUpload = (function () {
+      let div = document.createElement("div");
+      return (("draggable" in div || ("ondragstart" in div && "ondrop" in div)) && "FormData" in window && "FileReader" in window);
+    })();
+
+    let draggableFileArea = document.querySelector(".drag-file-area");
+    let browseFileText = document.querySelector(".browse-files");
+    let uploadIcon = document.querySelector(".upload-icon");
+    let dragDropText = document.querySelector(".dynamic-message");
+    let fileInput = document.querySelector(".default-file-input");
+    let cannotUploadMessage = document.querySelector(".cannot-upload-message");
+    let cancelAlertButton = document.querySelector(".cancel-alert-button");
+    let uploadedFile = document.querySelector(".file-block");
+    let fileName = document.querySelector(".file-name");
+    let fileSize = document.querySelector(".file-size");
+    let progressBar = document.querySelector(".progress-bar");
+    let removeFileButton = document.querySelector(".remove-file-icon");
+    let uploadButton = document.querySelector(".upload-button");
+    let fileFlag = 0;
+
+    let overflowWidth = document.querySelector('.upload-files-container').offsetWidth * 0.25;
+    let progressBarMaxWidth = document.querySelector('.upload-files-container').offsetWidth - overflowWidth;
+
+    fileInput.addEventListener("click", () => {
+      fileInput.value = "";
+    });
+
+    fileInput.addEventListener("change", (e) => {
+      let startIndex = (fileInput.value.indexOf('\\') >= 0 ? fileInput.value.lastIndexOf('\\') : fileInput.value.lastIndexOf('/'));
+      let filename = fileInput.value.substring(startIndex);
+      if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
+        filename = filename.substring(1);
+      }
+
+      uploadIcon.innerHTML = "確認文件：";
+      dragDropText.innerHTML = `${filename}`;
+      localStorage.setItem("filename", filename);
+
+      document.querySelector(".label").innerHTML =
+        `將檔案拖曳到這裡 或者 
+        <span class="browse-files" >
+          <input type="file" class="default-file-input" accept=".pdf" />
+          <span class="browse-files-text" style="top: 0;" > 預覽 </span>
+        </span>`;
+      uploadButton.innerHTML = `上傳`;
+      fileName.innerHTML = fileInput.files[0].name;
+      fileSize.innerHTML = (fileInput.files[0].size / 1024).toFixed(1) + " KB";
+      uploadedFile.style.cssText = "display: flex;";
+      progressBar.style.width = 0;
+      fileFlag = 0;
+    });
+
+    uploadButton.addEventListener("click", () => {
+      let isFileUploaded = fileInput.value;
+      removeFileButton.classList.add('custom-hide')
+
+      if (isFileUploaded != "") {
+        if (fileFlag == 0) {
+          fileFlag = 1;
+          var width = 0;
+          var id = setInterval(frame, 50);
+
+          function frame() {
+            // if (width >= 350) {
+            if (width >= progressBarMaxWidth) {
+              clearInterval(id);
+              uploadButton.innerHTML = `<span class="material-icons-outlined upload-button-icon"> 成功 </span> 上傳`;
+              modalStepPagination.querySelector('.next').classList.remove('custom-hide');
+            }
+            else {
+              width += 10;
+              progressBar.style.width = width + "px";
+            }
+          }
+        }
+      }
+      else {
+        cannotUploadMessage.style.cssText = "display: flex; animation: fadeIn linear 1.5s;";
+      }
+    });
+
+    cancelAlertButton.addEventListener("click", () => {
+      cannotUploadMessage.style.cssText = "display: none;";
+    });
+
+    if (isAdvancedUpload) {
+      ["drag", "dragstart", "dragend", "dragover", "dragenter", "dragleave", "drop"].forEach((evt) => draggableFileArea.addEventListener(evt, (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+      }));
+
+      ["dragover", "dragenter"].forEach((evt) => {
+        draggableFileArea.addEventListener(evt, (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          uploadIcon.innerHTML = "file_download";
+          dragDropText.innerHTML = "Drop your file here!";
+        });
+      });
+
+      draggableFileArea.addEventListener("drop", (e) => {
+        uploadIcon.innerHTML = "成功";
+        dragDropText.innerHTML = "檔案拖曳成功！";
+        document.querySelector(".label"
+        ).innerHTML = `將檔案拖曳到這裡 或者 <span class="browse-files" > <input type="file" class="default-file-input" accept=".pdf" /> <span class="browse-files-text" style="top: -23px; left: -20px;" > 預覽 </span> </span>`;
+        uploadButton.innerHTML = `上傳`;
+
+        let files = e.dataTransfer.files;
+        fileInput.files = files;
+        fileName.innerHTML = files[0].name;
+        fileSize.innerHTML = (files[0].size / 1024).toFixed(1) + " KB";
+        uploadedFile.style.cssText = "display: flex;";
+        progressBar.style.width = 0;
+        fileFlag = 0;
+      });
+    }
+
+    removeFileButton.addEventListener("click", () => {
+      uploadedFile.style.cssText = "display: none;";
+      fileInput.value = "";
+      uploadIcon.innerHTML = "上傳文件";
+      dragDropText.innerHTML = "將檔案拖曳到這裡";
+      document.querySelector(".label").innerHTML =
+        `<span class="browse-files">
+        <input type="file" class="default-file-input" accept=".pdf" />
+        <span class="browse-files-text"> 瀏覽 </span>
+        <span> 本地文件 </span>
+      </span>`;
+      uploadButton.innerHTML = `上傳`;
+    });
+  </script>
+
+  <!-- Options Function -->
+  <script>
+    function downloadPDFfile(id) {
+      let pdfIMG = localStorage.getItem(id);
+      let jsforpdf = new jsPDF();
+      // 設定背景在 PDF 中的位置及大小
+      const width = jsforpdf.internal.pageSize.width;
+      const height = jsforpdf.internal.pageSize.height;
+      jsforpdf.addImage(pdfIMG, "png", 0, 0, width, height);
+      jsforpdf.save(`${id}.pdf`);
+    }
+
+    function bookmark(id) {
+      let listItem = document.querySelectorAll(`#${id} span`);
+      let localFavoriteString = `${id}@${listItem[0].textContent}@${listItem[1].textContent}`;
+      let favoriteListSrting = localStorage.getItem("favoritelist") || "";
+      if (!favoriteListSrting.includes(localFavoriteString)) {
+        favoriteListSrting += favoriteListSrting.length > 0 ? `,${localFavoriteString}` : `${localFavoriteString}`;
+        localStorage.setItem("favoritelist", favoriteListSrting);
+      }
+      favoritelistInit();
+    }
+
+    function removePDF(id) {
+      let listItem = document.querySelectorAll(`#${id} > span`);
+      let localTrashString = `${id}@${listItem[0].textContent}@${listItem[1].textContent}`;
+      let trashListSrting = localStorage.getItem("trashlist") || "";
+      if (!trashListSrting.includes(localTrashString)) {
+        trashListSrting += trashListSrting.length > 0 ? `,${localTrashString}` : `${localTrashString}`;
+        localStorage.setItem("trashlist", trashListSrting);
+      }
+
+      let removeIDString = `${id}@${id.split('_')[1]}@${listItem[1].textContent}`;
+      let localPDFSrting = localStorage.getItem("localpdf");
+      let localPDFArray = localPDFSrting.split(',');
+      let filterArray = localPDFArray.filter(string => string !== removeIDString)
+      localStorage.setItem("localpdf", filterArray);
+      pdfListInit();
+      trashlistInit();
+    }
+
+    function removeBookmark(id) {
+      let listItem = document.querySelectorAll(`#${id} > span`);
+      let localFavoriteString = `${id}@${listItem[0].textContent}@${listItem[1].textContent}`;
+      let favoriteListSrting = localStorage.getItem("trashlist") || "";
+      if (!favoriteListSrting.includes(localFavoriteString)) {
+        favoriteListSrting += favoriteListSrting.length > 0 ? `,${localFavoriteString}` : `${localFavoriteString}`;
+        localStorage.setItem("trashlist", favoriteListSrting);
+      }
+
+      let removeIDString = `${id}@${listItem[0].textContent}@${listItem[1].textContent}`;
+      let localFavoriteSrting = localStorage.getItem("favoritelist");
+      let localFavoriteArray = localFavoriteSrting.split(',');
+      let filterArray = localFavoriteArray.filter(string => string !== removeIDString)
+      localStorage.setItem("favoritelist", filterArray);
+      pdfListInit();
+      favoritelistInit();
+    }
+
+    function recoverPDFfile(id) {
+      let listItem = document.querySelectorAll(`#${id} > span`);
+      let localPDFString = `${id}@${id.split("_")[1]}@${listItem[1].textContent}`;
+      let pdfListArray = localStorage.getItem("localpdf") || "";
+      if (!pdfListArray.includes(localPDFString)) {
+        pdfListArray += pdfListArray.length > 0 ? `,${localPDFString}` : `${localPDFString}`;
+        localStorage.setItem("localpdf", pdfListArray);
+      }
+
+      let removeIDString = `${id}@${listItem[0].textContent}@${listItem[1].textContent}`;
+      let localTrashSrting = localStorage.getItem("trashlist");
+      let localTrashArray = localTrashSrting.split(',');
+      let filterArray = localTrashArray.filter(string => string !== removeIDString)
+      localStorage.setItem("trashlist", filterArray);
+      pdfListInit();
+      trashlistInit();
+    }
+
+    function removeLocalPDF(id) {
+      let listItem = document.querySelectorAll(`#${id} > span`);
+      let removePDFString = `${id}@${listItem[0].textContent}@${listItem[1].textContent}`;
+      let localTrashSrting = localStorage.getItem("trashlist");
+      let localTrashArray = localTrashSrting.split(',');
+      let filterArray = localTrashArray.filter(string => string !== removePDFString)
+      localStorage.setItem("trashlist", filterArray);
+      trashlistInit();
+    }
+  </script>
+
+  <!-- Load PDF File from local storage -->
+  <script>
+    function pdfListInit() {
+      let localPDFSrting = localStorage.getItem("localpdf") || "";
+      let localPDFArray = localPDFSrting.split(",");
+      let pdfListItemStr = ""
+      document.querySelector('#pdf-list').innerHTML = "";
+      if (localPDFArray[0] !== '') {
+
+        localPDFArray.forEach(item => {
+          infoArray = item.split('@')
+          const [ID, TIMESTAMP, FILENAME] = infoArray;
+          let dateFormat = new Date(parseInt(TIMESTAMP));
+
+          pdfListItemStr += `
+        <li class="row m-0 px-2 py-1 mb-1 d-flex justify-content-center align-items-center custom-dark-shadow-sm custom-rounded-20" id="${ID}"><i class="col-md-1 col-sm-2 col-2 p-0 ft-paperclip text-center font-medium-3"></i><span class="col-md-3 col-sm-10 col-10 p-0 font-medium-2">${dateFormat.getDate()}-${dateFormat.getMonth() + 1}-${dateFormat.getFullYear()} ${dateFormat.getHours()}:${dateFormat.getMinutes()}:${dateFormat.getSeconds()}</span><span class="col-md-3 col-sm-10 col-12 p-0 font-medium-2">${FILENAME}</span><div class="col-md-5 col-sm-12 p-0 d-flex justify-content-end" style="gap: 10px;"><a href="javascript:void(0)" class="btn btn-outline-primary" onclick="downloadPDFfile('${ID}')"><i class="ft-download font-medium-3"></i></a><a href="javascript:void(0)" class="btn btn-outline-success" onclick="bookmark('${ID}')"><i class="ft-bookmark font-medium-3"></i></a><a href="javascript:void(0)" class="btn btn-outline-danger" onclick="removePDF('${ID}')"><i class="ft-trash font-medium-3"></i></a></div></li>`
+        })
+
+        document.querySelector('#pdf-list').innerHTML = "";
+        document.querySelector('#pdf-list').innerHTML = pdfListItemStr;
+      }
+    }
+    pdfListInit()
+  </script>
+
+  <!-- Load Favorite PDF File from local storage -->
+  <script>
+    function favoritelistInit() {
+      let localFavoriteSrting = localStorage.getItem("favoritelist") || "";
+      let localFavoriteArray = localFavoriteSrting.split(",");
+      document.querySelector('#favorite-list').innerHTML = "";
+      if (localFavoriteArray[0] !== '') {
+        let favoriteListItemStr = ""
+        localFavoriteArray.forEach(item => {
+          infoArray = item.split('@');
+          const [ID, TIMESTAMP, FILENAME] = infoArray;
+          favoriteListItemStr += `<li class="row m-0 px-2 py-1 mb-1 d-flex justify-content-center align-items-center custom-dark-shadow-sm custom-rounded-20" id='${ID}'>
+                            <i class="col-md-1 col-sm-2 col-2 p-0 ft-paperclip text-center font-medium-3"></i>
+                            <span class="col-md-3 col-sm-10 col-10 p-0 font-medium-2">${TIMESTAMP}</span>
+                            <span class="col-md-3 col-sm-10 col-12 p-0 font-medium-2">${FILENAME}</span>
+                            <div class="col-md-5 col-sm-12 p-0 d-flex justify-content-end" style="gap: 10px;">
+                              <a href="javascript:void(0)" class="btn btn-warning" onclick="removeBookmark('${ID}')"><i class="ft-heart font-medium-3"></i></a>
+                            </div>
+                          </li>`
+        })
+        document.querySelector('#favorite-list').innerHTML = "";
+        document.querySelector('#favorite-list').innerHTML = favoriteListItemStr;
+      }
+    }
+    favoritelistInit()
+  </script>
+
+  <!-- Load Trash PDF File from local storage -->
+  <script>
+    function trashlistInit() {
+      let localTrashSrting = localStorage.getItem("trashlist") || "";
+      let localTrashArray = localTrashSrting.split(",");
+      let trashListItemStr = "";
+      document.querySelector('#trash-list').innerHTML = "";
+      if (localTrashArray[0] !== '') {
+        localTrashArray.forEach(item => {
+          infoArray = item.split('@');
+          const [ID, TIMESTAMP, FILENAME] = infoArray;
+          trashListItemStr += `<li class="row m-0 px-2 py-1 mb-1 d-flex justify-content-center align-items-center custom-dark-shadow-sm custom-rounded-20" id='${ID}'>
+                            <i class="col-md-1 col-sm-2 col-2 p-0 ft-paperclip text-center font-medium-3"></i>
+                            <span class="col-md-3 col-sm-10 col-10 p-0 font-medium-2">${TIMESTAMP}</span>
+                            <span class="col-md-3 col-sm-10 col-12 p-0 font-medium-2">${FILENAME}</span>
+                            <div class="col-md-5 col-sm-12 p-0 d-flex justify-content-end" style="gap: 10px;">
+                              <a href="#" class="btn btn-outline-success" onclick="recoverPDFfile('${ID}')"><i class="ft-rotate-cw font-medium-3"></i></a>
+                              <a href="#" class="btn btn-outline-danger" onclick="removeLocalPDF('${ID}')"><i class="ft-trash font-medium-3"></i></a>
+                            </div>
+                          </li>`
+        })
+        document.querySelector('#trash-list').innerHTML = "";
+        document.querySelector('#trash-list').innerHTML = trashListItemStr;
+      }
+    }
+    trashlistInit()
+  </script>
+</body>
+<!-- END: Body-->
+
+</html>
