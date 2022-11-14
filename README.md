@@ -3,7 +3,7 @@
 The F2E 4th 來點點點簽
 
 ## Screenshot
-![alt text](https://github.com/CharlesSin/2022-THE-F2E-WeekTwo/blob/master/images/cover.jpg)
+![alt text](https://github.com/CharlesSin/2022-THEF2E-WeekTwo/blob/master/images/cover.jpg)
 
 ## Demo
 
