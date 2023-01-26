@@ -3,11 +3,11 @@
 The F2E 4th 來點點點簽
 
 ## Screenshot
-![alt text](https://github.com/CharlesSin/2022-THEF2E-WeekTwo/blob/master/images/cover.jpg)
+![alt cover](https://github.com/CharlesSin/2022-THEF2E-WeekTwo/blob/master/images/cover.jpg)
 
 ## Demo
 
-[Demo](https://2022-the-f2e-2.netlify.app/)
+[Demo](https://2022-the-f2e-2.netlify.app)
 
 ## Introduction
 

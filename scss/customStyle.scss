@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+// Vendor CSS
+@import "vendors";
+@import "switchery";
+@import "switch";
+@import "palette-switch";
+@import "chartist";
+@import "chartist-plugin-tooltip";
+@import "feather_style";
+
+// Theme CSS
+@import "bootstrap";
+@import "bootstrap-extended";
+@import "colors";
+@import "components";
+
+// Page CSS
+@import "vertical-menu";
+@import "palette-gradient";
+@import "chat-application";
+@import "dashboard-analytics";
+@import "font";
+@import "wizard";
+@import "style";

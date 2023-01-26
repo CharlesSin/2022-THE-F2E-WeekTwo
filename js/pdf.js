@@ -74,16 +74,18 @@ document.querySelector("input").addEventListener("change", async (e) => {
 
 function signatureImgSelector() {
   let localSignatureStr = localStorage.getItem("localSignature") || "";
-  localSignatureArray = localSignatureStr.split(",");
+  let pdfLocalSignatureArray = localSignatureStr.split(",");
   let signatureImgList = "";
 
-  localSignatureArray.forEach((item) => {
-    let signatureImgBase64 = localStorage.getItem(item);
-    signatureImgList += `<li class="custom-rounded-20 custom-light-shadow-sm d-flex justify-content-center align-items-center border border-primary" style="min-width: 150px; width: 150px; min-height: 100px; height: 100%"><img class="img-fluid custom-rounded-20 sign-img" src="${signatureImgBase64}" alt="signature ${item}"></li>`;
-  });
-
   document.querySelector("#signature-list-selector").innerHTML = "";
-  document.querySelector("#signature-list-selector").innerHTML = signatureImgList;
+
+  if (pdfLocalSignatureArray[0] !== "") {
+    pdfLocalSignatureArray.forEach((item) => {
+      let signatureImgBase64 = localStorage.getItem(item);
+      signatureImgList += `<li class="custom-rounded-20 custom-light-shadow-sm d-flex justify-content-center align-items-center border border-primary" style="min-width: 150px; width: 150px; min-height: 100px; height: 100%"><img class="img-fluid custom-rounded-20 sign-img" src="${signatureImgBase64}" alt="signature ${item}"></li>`;
+    });
+    document.querySelector("#signature-list-selector").innerHTML = signatureImgList;
+  }
 }
 
 signatureImgSelector();

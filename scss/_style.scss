@@ -1,0 +1,255 @@
+body,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navigation,
+.navigation .navigation-header {
+  font-family: "Roboto", sans-serif !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.custom-bg-disable {
+  background-color: #6b6f80 !important;
+}
+
+.cursor-notallowed {
+  cursor: not-allowed !important;
+}
+
+.cursor-default {
+  cursor: default !important;
+}
+
+.custom-hide {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.custom-dark-shadow-sm {
+  box-shadow: 0px 1px 5px rgba(179, 179, 179, 0.4), 0px 2px 8px rgba(215, 215, 215, 0.4), inset 0px 2px 5px rgba(215, 215, 215, 0.16), inset 0px -2px 3px rgba(179, 179, 179, 0.6),
+    inset 0px -6px 6px rgba(215, 215, 215, 0.2);
+}
+
+.custom-light-shadow-sm {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.custom-rounded-20 {
+  border-radius: 20px;
+}
+
+.custom-colour-palette {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 4px solid #dddddd;
+}
+
+.custom-colour-palette label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.custom-colour-palette:hover {
+  border: 4px solid #555555;
+}
+
+.custom-colour-palette .red {
+  background-color: red;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+.custom-colour-palette .green {
+  background-color: green;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+.custom-colour-palette .blue {
+  background-color: blue;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+.custom-colour-palette .black {
+  background-color: black;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+.custom-colour-palette.active {
+  border: 4px solid #777777;
+}
+
+.overflow-horizontal {
+  overflow-x: scroll;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.upload-files-container {
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  padding: 30px 60px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .upload-files-container {
+    width: 100%;
+    padding: 15px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .upload-files-container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.drag-file-area {
+  border: 6px dashed #6967ce;
+  border-radius: 40px;
+  margin: 10px 0 15px;
+  padding: 30px 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.drag-file-area h5 {
+  margin: 1rem 0;
+}
+
+.drag-file-area label .browse-files-text {
+  width: 100%;
+  color: #6967ce;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.browse-files span {
+  position: relative;
+  top: -25px;
+}
+
+.default-file-input {
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+}
+
+.cannot-upload-message {
+  background-color: #fa626b;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  padding: 5px 10px 5px 30px;
+  border-radius: 5px;
+  color: #ffffff;
+  display: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.cannot-upload-message span,
+.upload-button-icon {
+  padding-right: 10px;
+}
+
+.cannot-upload-message span:last-child {
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.file-block {
+  color: #f7fff7;
+  background-color: #6967ce;
+  transition: all 1s;
+  width: 100%;
+  position: relative;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 15px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.file-icon {
+  margin-right: 10px;
+}
+
+.file-name,
+.file-size {
+  padding: 0 3px;
+}
+
+.remove-file-icon {
+  cursor: pointer;
+}
+
+.progress-bar {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 4.5%;
+  width: 0;
+  height: 6px;
+  border-radius: 25px;
+  background-color: #4bb543;
+}
+
+.upload-button {
+  font-family: "Montserrat";
+  background-color: #6967ce;
+  color: #f7fff7;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 7.5px 50px;
+  cursor: pointer;
+}

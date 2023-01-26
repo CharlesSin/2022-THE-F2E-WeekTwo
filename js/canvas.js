@@ -90,13 +90,13 @@ clearBtn.addEventListener("click", reset);
 const saveSignatureBtn = document.querySelector("#save-signature");
 
 function saveImage() {
-  let localSignatureArray = localStorage.getItem("localSignature") || "";
+  let canvasLocalSignatureArray = localStorage.getItem("localSignature") || "";
   // 圖片儲存的類型選擇 png ，並將值放入 img 的 src
   const newImg = canvas.toDataURL("image/png");
   const signatureID = `signature_${new Date().getTime()}`;
-  localSignatureArray += localSignatureArray.length > 0 ? `,${signatureID}` : `${signatureID}`;
+  canvasLocalSignatureArray += canvasLocalSignatureArray.length > 0 ? `,${signatureID}` : `${signatureID}`;
   localStorage.setItem(signatureID, newImg);
-  localStorage.setItem("localSignature", localSignatureArray);
+  localStorage.setItem("localSignature", canvasLocalSignatureArray);
   reset();
   signatureImg();
 }
@@ -106,16 +106,18 @@ saveSignatureBtn.addEventListener("click", saveImage);
 
 function signatureImg() {
   let localSignatureStr = localStorage.getItem("localSignature") || "";
-  let localSignatureArray = localSignatureStr.split(",");
+  let canvasLocalSignatureImgArray = localSignatureStr.split(",");
   let signatureImgList = "";
 
-  localSignatureArray.forEach((item) => {
-    let signatureImgBase64 = localStorage.getItem(item);
-    signatureImgList += `<li class="custom-rounded-20 custom-light-shadow-sm d-flex justify-content-center align-items-center border border-primary" style="min-width: 150px; width: 150px; min-height: 100px; height: 100%"><img class="img-fluid custom-rounded-20" src="${signatureImgBase64}" alt="signature ${item}"></li>`;
-  });
-
   document.querySelector("#signature-list-viewer").innerHTML = "";
-  document.querySelector("#signature-list-viewer").innerHTML = signatureImgList;
+  if (canvasLocalSignatureImgArray[0] !== "") {
+    canvasLocalSignatureImgArray.forEach((item) => {
+      let signatureImgBase64 = localStorage.getItem(item);
+      signatureImgList += `<li class="custom-rounded-20 custom-light-shadow-sm d-flex justify-content-center align-items-center border border-primary" style="min-width: 150px; width: 150px; min-height: 100px; height: 100%"><img class="img-fluid custom-rounded-20" src="${signatureImgBase64}" alt="signature ${item}"></li>`;
+    });
+
+    document.querySelector("#signature-list-viewer").innerHTML = signatureImgList;
+  }
 }
 
 signatureImg();
