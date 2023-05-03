@@ -7,7 +7,7 @@ The F2E 4th 來點點點簽
 
 ## Demo
 
-[Demo](https://2022-the-f2e-2.netlify.app)
+[Demo](https://2022-the-f2e-week2.netlify.app)
 
 ## Introduction
 
